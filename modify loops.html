@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of Multiples of 3 and 5</title>
+</head>
+<body>
+    <script>
+        
+        let upperLimit = parseInt(prompt("Enter the upper limit:"));
+        let sum = 0;
+        for (let i = 1; i< upperLimit; i++) {
+            if (i % 3 == 0 || i % 5 == 0) 
+                {sum += i;}
+            
+        }
+
+
+        alert("The sum of all multiples of 3 and 5 below " + upperLimit + " is: " + sum);
+    </script>
+</body>
+</html>
+ 
