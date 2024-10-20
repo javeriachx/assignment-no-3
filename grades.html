@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let score = parseFloat(prompt("Enter your score:"));
+let grade;
+if (score >=90 && score <= 100) {grade = "A";}
+else if (score>=80 ) {grade = "B";}
+else if (score>=70) {grade = "C";}
+else if (score>=60) {grade = "D";}
+else if (score>=50) {grade = "F";}
+
+
+switch (grade) {
+    case 'A':
+        alert("Great job for an A!");
+     break;
+    case 'B':
+  alert("Congrats, you got a B!");
+ break;
+ case 'C':
+    alert('You passed with a C');
+    break;
+    case "D":
+        alert("You got a D, improvement needed!")
+        break;
+        case 'F':
+            alert("You failed with an F, better luck next time.");
+            break;
+            deault;
+}
+    </script>
+</body>
+</html>
