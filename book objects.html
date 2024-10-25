@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+
+let book = {
+    title: "A Thousand Splendid Suns",
+    author: "Khaled Hosseini",
+    year: 1890,
+    available: true,
+
+    
+    borrowBook() {
+        if (this.available) {
+            this.available = false;
+            console.log("Book has been borrowed.");
+        } else {
+            console.log("The book is already borrowed");
+        }
+    },
+
+    
+    returnBook() {
+        if (!this.available) {
+            this.available = true;
+            console.log("The book has been returned");
+        } else {
+            console.log("The book was not borrowed");
+        }
+    },
+
+    
+    printDetails() {
+        console.log("Title:", this.title, ", Author:", this.author, ", Year:", this.year, ", Available:", this.available);
+    }
+};
+        
+
+      book.borrowBook();
+      book.printDetails();
+
+      book.returnBook();
+      book.printDetails();
+    </script>
+  </body>
+</html>

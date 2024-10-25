@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+
+let shape = prompt("Enter the shape circle,rectangle or triangle:");
+const PI = 3.14159;
+
+let area;
+if (shape == "circle"){let radius=parseFloat (prompt("Enter the radius of circle"));
+    area = PI * radius * radius;
+    alert("This is the area of circle:"+area);
+
+}
+else if(shape == "rectangle"){let length =parseFloat (prompt("Enter the length of rectangle"));
+    let width =parseFloat (prompt("Enter the width of rectangle"));
+    area = length * width;
+    alert("This is the area of rectangle:"+area);
+}
+else if(shape == "triangle"){ let base =parseFloat(prompt("Enter the base of triangle"));
+    let height = (prompt("Enter the height of triangle"));
+    area = (base * height)/2
+    alert("This is the area of triangle:"+area);
+}
+
+
+
+
+    </script>
+
+</body>
+<head>
+  
